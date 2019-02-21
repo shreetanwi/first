@@ -31,7 +31,7 @@ func main() {
 
 	m := map[string]person{
 		p1.last: p1,
-		p1.last: p2,
+		p2.last: p2,
 	}
 
 	for k, v := range m {
