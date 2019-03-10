@@ -9,16 +9,16 @@ type person struct {
 }
 
 func main() {
-	p1 := "Tanwi Shree",
+	p1 := person{
+		name: "Tanwi Shree",
+	}
+
+	fmt.Println(p1)
+	ChangeMe(&p1)
+	fmt.Println(p1)
 }
 
-fmt.Println(p1)
-ChangeMe(&p1)
-fmt.Println(p1)
-ChangeMe(p1)
-}
-
-func ChangeMe(p *person){
+func ChangeMe(p *person) {
 	p.name = "James Bond"
 	(*p).name = "Monneyp"
 }
